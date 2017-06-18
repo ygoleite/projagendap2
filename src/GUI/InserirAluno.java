@@ -38,10 +38,10 @@ public class InserirAluno extends JFrame implements ActionListener{
 
 
 		c.setLayout(new GridLayout(9,9));
-		c.add(new JLabel("Nome:"));
+		c.add(new JLabel("Nome do Aluno:"));
 		c.add(nome=new JTextField());
 		nome.setFont(new Font("serif",Font.ROMAN_BASELINE,20));
-		c.add(new JLabel("Sexo:"));
+		c.add(new JLabel("Sexo (M/F):"));
 		c.add(sexo=new JTextField());
 		sexo.setFont(new Font("serif",Font.ROMAN_BASELINE,20));
 		c.add(new JLabel("Idade:"));

@@ -1,6 +1,6 @@
 package Alunos;
 import java.io.IOException;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
