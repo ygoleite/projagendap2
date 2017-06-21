@@ -23,21 +23,20 @@ public class PrimeiraJanela extends JFrame implements ActionListener {
 	JLabel textoTopo,textoBaixo;
 	
 	public PrimeiraJanela() throws IOException{
+		
 		super("Matrículas 2017");
 
-
-
 		textoTopo=new JLabel("Selecione uma das opções:");
-		textoTopo.setFont(new Font("serif",Font.CENTER_BASELINE,15));
+		textoTopo.setFont(new Font("verdana",Font.CENTER_BASELINE,15));
 		textoBaixo=new JLabel("Projeto P2 - Matricula");
-		textoBaixo.setFont(new Font("serif",Font.LAYOUT_LEFT_TO_RIGHT,15));
+		textoBaixo.setFont(new Font("verdana",Font.LAYOUT_LEFT_TO_RIGHT,15));
 		Container a = getContentPane();
 
-		inserir = new JButton("Novo Aluno?");
+		inserir = new JButton("Novo Aluno");
 		inserir.addActionListener(this);
-		pesquisar = new JButton("Encontrar Um Aluno?");
+		pesquisar = new JButton("Encontrar Um Aluno");
 		pesquisar.addActionListener(this);
-		remover = new JButton("Apagar Aluno?");
+		remover = new JButton("Apagar Aluno");
 		remover.addActionListener(this);
 		sair= new JButton("Sair");
 		sair.addActionListener(this);
@@ -77,7 +76,7 @@ public class PrimeiraJanela extends JFrame implements ActionListener {
 		if(arg0.getSource() == remover){
 			new RemoverAluno();
 		}
-		if(arg0.getSource() ==sair){
+		if(arg0.getSource() == sair){
 			System.exit(0);
 			try {
 				Repositorio.gravarAlunos();
